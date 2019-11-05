@@ -159,41 +159,43 @@ h5 {
 
 /* Your code starts here! */
 
-
-/* * {
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    max-width: 100% border: 1px solid red; 
+    max-width: 100% border: 1px solid red;
 }
-*/
 
 .nav-bar {
     display: flex;
-    width: 100%;
-    text-align: center;
+    justify-content: center;
     background-color: white;
     margin: 1%;
-    padding: 3%;
-    border: 1px solid red;
+    padding: 0.90%;
+}
+
+.nav {
+    justify-content: center;
+    vertical-align: baseline;
+    font-size: 18px;
 }
 
 .nav a {
-    display: inline;
     font-size: 12px;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid purple;
+    margin: 28px;
+    color: black;
 }
 
 .logo-photo {
-    float: right;
     margin: 0;
-    border: 1px solid orange;
+    justify-content: center;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 .header {
-    margin: 5%;
+    width: 100%;
     border: 1px solid blue;
     padding: 15%;
 }
@@ -202,18 +204,27 @@ h5 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    font-size: 80px;
+    font-size: 75px;
     text-align: center;
-    border: 1px solid yellow;
+}
+
+.innov {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3%;
 }
 
 .button {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px 32px;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 10px 24px;
     text-align: center;
-    border: none;
-    font-size: 16px;
+    margin: 1%;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 .image {
@@ -223,73 +234,52 @@ h5 {
 
 .feat-about {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding: 2%;
 }
 
 .feature-content {
     text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.63);
-    display: flex;
-    justify-content: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+p {
+    text-align: left;
 }
 
 .about-content {
     text-align: center;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    margin: 10%;
-    padding: 10%;
 }
+
+
+/* this is the middle image on page. */
 
 .middle-img {
     border: 1px solid black;
-}
-
-.title {
-    display: inline-block;
-    margin: 10%;
-    padding: 10%;
-    border: 2px solid black;
-}
-
-.title-container {
-    display: inline-block;
-    border: 2px solid black;
+    width: 100%;
 }
 
 .all-content {
-    text-align: center;
     display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    margin: 10%;
-    padding: 10%;
+    flex-direction: row;
+    padding: 1%;
+    vertical-align: baseline;
 }
 
-.service {
+footer {
     text-align: center;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    margin: 0.5%;
-    padding: 0.5%;
 }
 
-.products {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    margin: 0.5%;
-    padding: 0.5%;
+hr {
+    border-top: 2px solid black;
 }
 
-.all-content .vision {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    margin: 0.5%;
-    padding: 0.5%;
+@media (max-width: 500px) {
+    .header {
+        width: 500px;
+        background: pink;
+    }
 }
